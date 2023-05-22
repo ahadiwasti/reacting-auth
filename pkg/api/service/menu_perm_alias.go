@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dao"
+	"./pkg/api/dao"
 )
 
 var menuPermAlias = dao.MenuPermAlias{}

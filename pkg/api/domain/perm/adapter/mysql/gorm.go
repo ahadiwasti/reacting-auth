@@ -4,8 +4,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dao"
-	apiModel "github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/dao"
+	apiModel "./pkg/api/model"
 	"github.com/casbin/casbin/model"
 	"github.com/casbin/casbin/persist"
 	"github.com/jinzhu/gorm"

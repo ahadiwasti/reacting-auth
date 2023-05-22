@@ -3,8 +3,8 @@ package dao
 import (
 	"fmt"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/dto"
+	"./pkg/api/model"
 )
 
 type RoleDataPermDao struct {

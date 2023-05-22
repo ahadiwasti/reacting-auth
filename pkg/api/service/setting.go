@@ -3,14 +3,14 @@ package service
 import (
 	"encoding/json"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/dept/sync"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/domain/dept/sync"
+	"./pkg/api/dto"
+	"./pkg/api/log"
 	dingtalk "github.com/bullteam/go-dingtalk/src"
 	"github.com/spf13/viper"
 
-	//"github.com/ahadiwasti/reacting-auth/pkg/api/log"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	//"./pkg/api/log"
+	"./pkg/api/model"
 )
 
 type SettingService struct {

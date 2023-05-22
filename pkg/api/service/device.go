@@ -4,10 +4,10 @@ package service
 // 	"github.com/pkg/errors"
 // 	// "strconv"
 // 	// "strings"
-// 	"github.com/ahadiwasti/reacting-auth/pkg/api/dao"
-// 	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-// 	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
-// 	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+// 	"./pkg/api/dao"
+// 	"./pkg/api/dto"
+// 	"./pkg/api/log"
+// 	"./pkg/api/model"
 // )
 
 // var deviceDao = dao.Device{}

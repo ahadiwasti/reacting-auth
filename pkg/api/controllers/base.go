@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/middleware"
+	"./pkg/api/dto"
+	"./pkg/api/middleware"
 	"github.com/beego/i18n"
 	"github.com/gin-gonic/gin"
 )

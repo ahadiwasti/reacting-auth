@@ -1,7 +1,7 @@
 package role
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/perm"
+	"./pkg/api/domain/perm"
 )
 
 // CheckPerm : check permission by role with domain

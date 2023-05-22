@@ -1,10 +1,11 @@
 package login
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/account"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"./pkg/api/domain/account"
+	"./pkg/api/model"
+	"github.com/stretchr/testify/assert"
 )
 
 type verifyCases struct {

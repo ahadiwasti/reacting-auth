@@ -3,8 +3,8 @@ package dao
 import (
 	"time"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/dto"
+	"./pkg/api/model"
 	// "fmt"
 )
 

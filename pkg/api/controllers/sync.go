@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/service"
+	"./pkg/api/service"
 	"github.com/gin-gonic/gin"
 )
 

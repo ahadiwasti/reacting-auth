@@ -1,7 +1,7 @@
 package ldap
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/log"
 	"github.com/spf13/viper"
 )
 

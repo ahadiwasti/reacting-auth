@@ -3,7 +3,7 @@ package dao
 import (
 	"fmt"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/log"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"

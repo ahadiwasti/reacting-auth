@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/perm"
+	"./pkg/api/domain/perm"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

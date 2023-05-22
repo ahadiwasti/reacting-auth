@@ -3,8 +3,8 @@ package perm
 import (
 	"sync"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/perm/adapter"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/domain/perm/adapter"
+	"./pkg/api/log"
 	rediswatcher "github.com/billcobbler/casbin-redis-watcher/v2"
 	"github.com/casbin/casbin"
 	"github.com/spf13/viper"

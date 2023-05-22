@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
+	"./pkg/api/dto"
 	"github.com/spf13/viper"
 )
 

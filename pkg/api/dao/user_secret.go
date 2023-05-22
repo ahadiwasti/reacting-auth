@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/model"
 	"github.com/jinzhu/gorm"
 )
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/dto"
+	"./pkg/api/model"
 	"github.com/jinzhu/gorm"
 )
 

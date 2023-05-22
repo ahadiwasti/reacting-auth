@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/model"
 	"github.com/appleboy/gin-jwt/v2"
 	jwt "github.com/appleboy/gin-jwt/v2"
 	"github.com/gin-gonic/gin"

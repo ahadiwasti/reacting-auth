@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/service"
+	"./pkg/api/dto"
+	"./pkg/api/log"
+	"./pkg/api/service"
 	"github.com/gin-gonic/gin"
 )
 

@@ -4,9 +4,9 @@ import (
 	// "github.com/spf13/viper"
 	"time"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dao"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/dao"
+	"./pkg/api/dto"
+	"./pkg/api/model"
 	// "fmt"
 )
 

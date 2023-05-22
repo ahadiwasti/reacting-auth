@@ -8,15 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/cache"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dao"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/account/ldap"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/perm"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/sync/dingdingtalk"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/logger"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/middleware"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/router"
+	"./pkg/api/cache"
+	"./pkg/api/dao"
+	"./pkg/api/domain/account/ldap"
+	"./pkg/api/domain/perm"
+	"./pkg/api/log"
+	"./pkg/api/logger"
+	"./pkg/api/middleware"
+	"./pkg/api/router"
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog"
 	"github.com/spf13/cobra"
@@ -32,8 +31,8 @@ var (
 	//StartCmd : set up restful api server
 	StartCmd = &cobra.Command{
 		Use:     "server",
-		Short:   "Start zeus API server",
-		Example: "zeus server -c config/in-local.yaml",
+		Short:   "Starting ahadiwasti development server",
+		Example: "using config file from config/in-local.yaml",
 		PreRun: func(cmd *cobra.Command, args []string) {
 			usage()
 			setup()
@@ -54,18 +53,7 @@ func init() {
 }
 
 func usage() {
-	usageStr := `
-
-
-	
-	░█████╗░███╗░░░███╗░██████╗████████╗███████╗░█████╗░██╗░░██╗
-	██╔══██╗████╗░████║██╔════╝╚══██╔══╝██╔════╝██╔══██╗██║░░██║
-	███████║██╔████╔██║╚█████╗░░░░██║░░░█████╗░░██║░░╚═╝███████║
-	██╔══██║██║╚██╔╝██║░╚═══██╗░░░██║░░░██╔══╝░░██║░░██╗██╔══██║
-	██║░░██║██║░╚═╝░██║██████╔╝░░░██║░░░███████╗╚█████╔╝██║░░██║
-	╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═════╝░░░░╚═╝░░░╚══════╝░╚════╝░╚═╝░░╚═╝
-														
-`
+	usageStr := `Developed By ahadiwasti.com`
 	fmt.Printf("%s\n", usageStr)
 	return
 }
@@ -112,8 +100,6 @@ func setup() {
 	ldap.Setup()
 	//7.Set up permission handler
 	perm.SetUp(cluster)
-	//8.DingTalk client setup
-	dingdingtalk.SetUp()
 	//9.Initialize language
 	middleware.InitLang()
 }

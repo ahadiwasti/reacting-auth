@@ -1,7 +1,7 @@
 package adapter
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/perm/adapter/mysql"
+	"./pkg/api/domain/perm/adapter/mysql"
 	"github.com/casbin/casbin/model"
 )
 

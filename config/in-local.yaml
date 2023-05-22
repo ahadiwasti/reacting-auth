@@ -1,0 +1,100 @@
+account:
+  avatar:
+    width: 150
+    height: 150
+
+fileLocation: logs/
+maxSize: 4000000
+compress: false
+maxAge: 35
+enableConsole: true
+enableFile: true
+
+base:
+  # baseurl: http://sahadi.dev.axiomwallet.com:8081/
+  isenableaccess: false
+  isenablecode: false
+  logpath: /data/log
+  port: 8082
+  sitename: AMSTECH User Authentication
+  # apiurl: http://sahadi.dev.axiomwallet.com:8082/rpc
+casbin:
+  model:
+    rule_0: config/casbin/rbac_model_0.conf
+cors:
+  allow_credentials: true
+  allow_headers:
+  - '*'
+  allow_methods:
+  - GET
+  - POST
+  - OPTIONS
+  - PUT
+  - DELETE
+  allow_origins:
+  - '*'
+  enable: true
+  max_age: 7200
+database:
+  driver: mysql
+  mysql:
+#   mysql -h 192.168.200.2 -u ahadi -p
+# Password is "Axiom099#"
+    charset: utf8
+    host: 127.0.0.1:3306
+    name: zeus
+    password: Welcome@0336
+    pool:
+      max: 20
+      min: 5
+    ssl: false
+    user: mysqladmin
+  sqlite:
+    dsn: data/zeus.db
+domain: localhost
+jwt:
+  expiresat: 3600*24*1
+  key:
+    private: keys/jwt_private_key.pem
+    public: keys/jwt_public_key.pem
+lang:
+  names: English
+  types: en-US
+ldap:
+  addr: 127.0.0.1:389
+  attributes:
+  - cn
+  - displayName
+  - mail
+  authfilter: (&(uid=%s))
+  basedn: dc=bullteam,dc=com
+  binddn: cn=admin,dc=bullteam,dc=com
+  bindpass: zeus@admin#123456
+  starttls: false
+  tls: false
+  userdn: cn=admin,dc=bullteam,dc=com
+mode: debug
+project:
+  merge: true
+redis:
+  host: 127.0.0.1:6379
+  auth:
+  db: 0
+  pool:
+    max: 20
+    min: 3
+security:
+  install_lock: false
+  2fa:
+    enabled: false
+  #0 - normal
+  #1 - safe
+  # check if user has been not doing anything in 1 hour then sign out automatically
+  # force user to change password in 90 days
+  level: 0
+login:
+  failRecordKey: "login:fail:times:%s"
+  failUntilLock: 5
+  pwdExpiredDays: 90
+  pwdWarningDays: 7
+  idleDuration: 3600

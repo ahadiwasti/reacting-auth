@@ -1,10 +1,10 @@
 package router
 
 import (
-	_ "github.com/ahadiwasti/reacting-auth/docs"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/controllers"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/account"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/middleware"
+	_ "./docs"
+	"./pkg/api/controllers"
+	"./pkg/api/domain/account"
+	"./pkg/api/middleware"
 	"github.com/appleboy/gin-jwt/v2"
 	jwt "github.com/appleboy/gin-jwt/v2"
 	"github.com/gin-gonic/gin"

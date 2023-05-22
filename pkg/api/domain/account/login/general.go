@@ -1,8 +1,8 @@
 package login
 
 import (
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/account"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
+	"./pkg/api/domain/account"
+	"./pkg/api/model"
 )
 
 // VerifyPassword : verify password by salt

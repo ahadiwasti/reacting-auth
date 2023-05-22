@@ -13,9 +13,9 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	// "github.com/ahadiwasti/reacting-auth/pkg/api/cache"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/logger"
+	// "./pkg/api/cache"
+	"./pkg/api/dto"
+	"./pkg/api/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/client"

@@ -7,7 +7,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	// "github.com/ahadiwasti/reacting-auth/pkg/api/dto"
+	// "./pkg/api/dto"
 	"io/ioutil"
 	"net/http"
 	"net/http/httputil"

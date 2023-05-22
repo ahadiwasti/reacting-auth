@@ -8,7 +8,7 @@ import (
 	"image/jpeg"
 	"strconv"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/log"
 	"github.com/nfnt/resize"
 	"github.com/spf13/viper"
 
@@ -17,11 +17,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dao"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/account/login"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/model"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/utils"
+	"./pkg/api/dao"
+	"./pkg/api/domain/account/login"
+	"./pkg/api/dto"
+	"./pkg/api/model"
+	"./pkg/api/utils"
 )
 
 type MyAccountService struct {

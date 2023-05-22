@@ -1,6 +1,6 @@
 package dao
 
-import "github.com/ahadiwasti/reacting-auth/pkg/api/model"
+import "./pkg/api/model"
 
 type MenuPermAlias struct {
 }

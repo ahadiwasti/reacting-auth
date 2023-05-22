@@ -2,8 +2,8 @@ package controllers
 
 // import (
 // 	"github.com/gin-gonic/gin"
-// 	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
-// 	"github.com/ahadiwasti/reacting-auth/pkg/api/service"
+// 	"./pkg/api/dto"
+// 	"./pkg/api/service"
 // )
 
 // var deviceService = service.DeviceService{}

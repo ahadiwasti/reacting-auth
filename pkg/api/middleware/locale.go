@@ -3,7 +3,7 @@ package middleware
 import (
 	"strings"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/log"
 	"github.com/beego/i18n"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"

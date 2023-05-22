@@ -3,8 +3,8 @@ package service
 import (
 	"strings"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/domain/sync/dingdingtalk"
-	"github.com/ahadiwasti/reacting-auth/pkg/api/dto"
+	"./pkg/api/domain/sync/dingdingtalk"
+	"./pkg/api/dto"
 	dingtalk "github.com/bullteam/go-dingtalk/src"
 	"github.com/spf13/viper"
 )

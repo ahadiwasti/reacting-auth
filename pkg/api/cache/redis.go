@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ahadiwasti/reacting-auth/pkg/api/log"
+	"./pkg/api/log"
 	"github.com/go-redis/redis"
 	"github.com/spf13/viper"
 )
