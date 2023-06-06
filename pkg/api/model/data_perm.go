@@ -1,15 +1,15 @@
 package model
 
 type DataPerm struct {
-	Id        int    `json:"id"`         // 自增ID
-	ParentId  int    `json:"parent_id"`  // 父级id
-	Name      string `json:"name"`       // 名称
-	Perms     string `json:"perms"`      // 数据权限标识
-	PermsRule string `json:"perms_rule"` // 数据规则
-	PermsType int    `json:"perms_type"` // 类型 1=分类 2=数据权限
-	OrderNum  int    `json:"order_num"`  // 排序字段
+	Id        int    `json:"id"`
+	ParentId  int    `json:"parent_id"`
+	Name      string `json:"name"`
+	Perms     string `json:"perms"`
+	PermsRule string `json:"perms_rule"`
+	PermsType int    `json:"perms_type"`
+	OrderNum  int    `json:"order_num"`
 	DomainId  int    `json:"domain_id"`
-	Remarks   string `json:"remarks"` // 说明
+	Remarks   string `json:"remarks"`
 }
 
 type DataPermQuery struct {

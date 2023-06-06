@@ -3,10 +3,9 @@ package middleware
 import (
 	"fmt"
 	"net/http"
+	"reacting-auth/pkg/api/utils/log"
 	"strings"
 
-	"./pkg/api/log"
-	"github.com/beego/i18n"
 	"github.com/gin-gonic/gin"
 )
 
@@ -25,11 +24,12 @@ func PermCheck(c *gin.Context) {
 		c.Next()
 		return
 	}
-	if !accountService.CheckPermission(uid, "root", route) {
+	check, _ := accountService.CheckPermission(uid, "root", route)
+	if !check {
 		log.Warn(fmt.Sprintf("No permission for %s", route))
 		c.JSON(http.StatusOK, gin.H{
 			"code": 403,
-			"msg":  i18n.Tr(GetLang(), "err.Err403"),
+			"msg":  "err.Err403",
 		})
 		c.Abort()
 		return

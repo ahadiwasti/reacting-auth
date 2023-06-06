@@ -1,12 +1,7 @@
 package main
 
-import (
-	"github.com/ahadiwasti/reacting-auth/cmd"
-)
+import "reacting-auth/cmd"
 
-// @BasePath /v1
-// @securityDefinitions.apikey ApiKeyAuth
 func main() {
 	cmd.Execute()
-	//dao.Shutdown()
 }

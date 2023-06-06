@@ -1,8 +1,9 @@
 package adapter
 
 import (
-	"./pkg/api/domain/perm/adapter/mysql"
-	"github.com/casbin/casbin/model"
+	"reacting-auth/pkg/api/domain/perm/adapter/mysql"
+
+	"github.com/casbin/casbin/v2/model"
 )
 
 type Adapter interface {

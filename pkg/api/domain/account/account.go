@@ -3,26 +3,28 @@ package account
 import (
 	"crypto/rand"
 	"fmt"
-	"golang.org/x/crypto/scrypt"
 	"io"
+
+	"golang.org/x/crypto/scrypt"
 )
 
 const pwHashBytes = 64
 
-//login type
+// login type
 var (
 	LoginStandard = 1
 	LoginOAuth    = 2
 	LoginLdap     = 3
 )
 
-//login oauth type
-var (
-	OAuthDingTalk = 1
-	OAuthWechat   = 2
-	OAuthQQ       = 3
-	OAuthFacebook = 4
-	OAuthGoogle   = 5
+// login oauth type
+const (
+	OAuthDingTalk = iota
+	//todo : ...
+	OAuthWechat
+	OAuthQQ
+	OAuthFacebook
+	OAuthGoogle
 )
 
 // HashPassword : password hashing

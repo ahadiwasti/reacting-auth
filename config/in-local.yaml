@@ -2,27 +2,19 @@ account:
   avatar:
     width: 150
     height: 150
-
-fileLocation: logs/
-maxSize: 4000000
-compress: false
-maxAge: 35
-enableConsole: true
-enableFile: true
-
 base:
-  # baseurl: http://sahadi.dev.axiomwallet.com:8081/
+  baseurl: http://localhost:8082/
   isenableaccess: false
   isenablecode: false
   logpath: /data/log
-  port: 8082
-  sitename: AMSTECH User Authentication
-  # apiurl: http://sahadi.dev.axiomwallet.com:8082/rpc
+  port: '8082'
+  sitename: Zeus 宙斯权限后台管理系统
+  apiurl: http://localhost:8082/api
 casbin:
   model:
     rule_0: config/casbin/rbac_model_0.conf
 cors:
-  allow_credentials: true
+  allow_credentials: false
   allow_headers:
   - '*'
   allow_methods:
@@ -33,13 +25,11 @@ cors:
   - DELETE
   allow_origins:
   - '*'
-  enable: true
+  enable: false
   max_age: 7200
 database:
   driver: mysql
   mysql:
-#   mysql -h 192.168.200.2 -u ahadi -p
-# Password is "Axiom099#"
     charset: utf8
     host: 127.0.0.1:3306
     name: zeus
@@ -48,18 +38,25 @@ database:
       max: 20
       min: 5
     ssl: false
-    user: mysqladmin
+    user: root
   sqlite:
     dsn: data/zeus.db
-domain: localhost
+domain: bullteam.local
+email:
+  smtp:
+    address: ss@163.com
+    password: xxxxxx
+    port: 25
+    server: smtp.163.com
+    user: vcoso@163.com
 jwt:
   expiresat: 3600*24*1
   key:
     private: keys/jwt_private_key.pem
     public: keys/jwt_public_key.pem
 lang:
-  names: English
-  types: en-US
+  names: 简体中文|English
+  types: zh-CN|en-US
 ldap:
   addr: 127.0.0.1:389
   attributes:
@@ -87,14 +84,15 @@ security:
   install_lock: false
   2fa:
     enabled: false
-  #0 - normal
-  #1 - safe
-  # check if user has been not doing anything in 1 hour then sign out automatically
-  # force user to change password in 90 days
   level: 0
 login:
+  # redis记录连续登录失败次数
   failRecordKey: "login:fail:times:%s"
+  # 5次登录失败被锁
   failUntilLock: 5
+  # 密码有效时间
   pwdExpiredDays: 90
+  # 在截至多少天内提醒更新密码
   pwdWarningDays: 7
+  # 多久未操作退出账号
   idleDuration: 3600
