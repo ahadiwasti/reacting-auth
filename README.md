@@ -11,11 +11,9 @@ The incorporation of microfrontends with React allows for flexible and seamless 
 In summary, this project demonstrates a robust and modern approach to RBAC, leveraging top-notch architecture and tools for efficient access control and scalability.
 
 
-<p align="center">
-    <img src="https://gitee.com/bullteam/zeus-admin/raw/master/docs/images/logo.png" height="145">
-</p>
 
-# Zeus - Permission & Account Management System
+
+# Permission & Account Management System
 
 [![golang](https://img.shields.io/badge/golang-1.18.2-green.svg?style=plastic)](https://www.golang.org/)
 [![casbin](https://img.shields.io/badge/casbin-2.47.1-brightgreen.svg?style=plastic)](https://github.com/casbin/casbin)
