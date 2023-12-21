@@ -19,7 +19,7 @@ In summary, this project demonstrates a robust and modern approach to RBAC, leve
 [![casbin](https://img.shields.io/badge/casbin-2.47.1-brightgreen.svg?style=plastic)](https://github.com/casbin/casbin)
 
 ## Project Introduction
-> `Zeus` is a permission management backend system that provides private SaaS cloud services for unified backend permission management for enterprises.  
+> - This permission management backend system that provides private SaaS cloud services for unified backend permission management for enterprises.  
 > - The project is developed using the `Golang Gin` + `vue-element-admin` framework, using `JWT` + `Casbin` for permission management, and provides a Restful API interface for OAuth2.0.
 > - It provides unified login authentication, menu management, permission management, organizational structure management, employee management, configuration center, and log management for enterprise backend systems.
 > - Supports enterprise WeChat and DingTalk login and synchronization of enterprise organizational structure.
@@ -27,7 +27,6 @@ In summary, this project demonstrates a robust and modern approach to RBAC, leve
 > - Integrates open-source software, paid SaaS software, and internal development systems of enterprises, including but not limited to Jenkins, Jira, GitLab, Confluence, ZenTao, enterprise email, OA, CRM, financial software, and enterprise SaaS cloud services, to solve the problem of unsynchronized accounts across multiple software and platforms in enterprises.
 > - `Build a unified open platform ecosystem to make it easier for enterprises to introduce external systems.`
 
-For more information, please visit the official website of [Bull Team Open Source](http://www.bullteam.cn) and the detailed [Development Documentation Guide](http://doc.bullteam.cn).
 
 ## Features (Currently Implemented)
 - Login/Logout
@@ -40,7 +39,7 @@ For more information, please visit the official website of [Bull Team Open Sourc
     - Data Permission Management
 - Personal Account
     - Third-party Login (DingTalk)
-    - Security Settings ([Google 2FA Two-Factor Authentication](http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html))
+    - Security Settings 
     - LDAP Support
 
 ## Roadmap (Planned Features)
@@ -62,8 +61,3 @@ For more information, please visit the official website of [Bull Team Open Sourc
 - Integration with Worklite, Teambition, Github, Mockplus, Tapd, and other SaaS services
 - Integration with open-source software such as Jenkins, Jira, GitLab, Confluence, ZenTao, etc.
 
-# Docker Deployment
-You can refer to the [documentation](http://doc.bullteam.cn/guide/install.html#%E4%BB%8Edocker%E5%AE%89%E8%A3%85) for Docker deployment instructions.
-
-# Architecture
-<img src="https://
