@@ -47,7 +47,6 @@ In summary, this project demonstrates a robust and modern approach to RBAC, leve
 - Security and Risk Control
 - Operation Log Monitoring
     - Login Logs
-    - Abnormal Logins
     - Operation Logs
 - Page Management
     - Page Configuration Management
